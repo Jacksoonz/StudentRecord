@@ -2,34 +2,39 @@ public class StudentRecord
 {
    //contains scores.length values and scores.length > 1
    private int [] scores;
+   private String name;
    
    //Constructs a StudentRecord object with an array of scores.
-   public StudentRecord(int [] s)
+   public StudentRecord(int [] s, String names)
    {
-      scores = s;
+       this.scores = s;
+       this.name = names;
    }
    
-   /** returns the average (arithmetic mean) of the values in scores
-    *  whose subscripts are between first and last, inclusive
-    *  PRECONDITION: 0 <= first <= last < scores.length
-    */
    public double average(int first, int last)
    {
         double sum = 0.0;
-        for(int i=first; i<= last; i++){
+        for(int i=first; i<= last; i++)
             sum += scores[i];
-            sum /= (last-first)+1;
-        }
+        sum /= (last-first)+1;
         return sum;
    }
    
-    
+   public String getName()
+   {
+       return name;
+   }
+   
    /** returns true if each successive value in scores is greater than
     *  or equal to the previous value; false otherwise.
     */
-   private boolean hasImproved()
+   public boolean hasImproved()
    {
-      return false; //here so the class compiles
+      double value
+      for(int i=0 ; i<=  ; i++)
+        sum += scores[i]
+        if value>
+        
    }  
    
    /** if the values in scores have imrpoved, returns the average of
