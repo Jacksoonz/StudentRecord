@@ -30,11 +30,16 @@ public class StudentRecord
     */
    public boolean hasImproved()
    {
-      double value
-      for(int i=0 ; i<=  ; i++)
-        sum += scores[i]
-        if value>
-        
+    double value;
+      for(int i=0 ; i<=scores.length; i++){
+        value += scores[i];
+        if (value>= scores.length-1){
+            return true;
+        }else{
+            return false;
+        }
+    }
+    return value;
    }  
    
    /** if the values in scores have imrpoved, returns the average of
